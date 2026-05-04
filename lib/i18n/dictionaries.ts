@@ -32,7 +32,7 @@ export const translations = {
       structural: {
         title: "Structural & Concrete",
         subtitle: "The unshakeable foundation of your project.",
-        bgImage: "/structural-bg.png",
+        bgImage: "/structural-bg.webp",
         description: "We don't just pour concrete; we engineer stability. From deep excavation and precise footings to complex rebar grids and custom formwork, our structural team ensures your building meets all Canadian safety codes while standing the test of time.",
         features: [
           "Deep Excavation & Site Prep",
@@ -51,7 +51,7 @@ export const translations = {
       exterior: {
         title: "Exterior & Additions",
         subtitle: "Expanding horizons, elevating curb appeal.",
-        bgImage: "/exterior-bg.png",
+        bgImage: "/exterior-bg.webp",
         description: "Transform the outside of your property. Whether you need a massive home addition to accommodate a growing family, a full facade facelift, or structural hardscaping, we blend architectural beauty with weather-resistant durability.",
         features: [
           "Multi-story Home Additions",
@@ -71,7 +71,7 @@ export const translations = {
       interior: {
         title: "Interior Renovations",
         subtitle: "Luxury living spaces tailored to your lifestyle.",
-        bgImage: "/interior-bg.png",
+        bgImage: "/interior-bg.webp",
         description: "Our interior division specializes in high-end, full-gut remodeling. We coordinate our master plumbers, electricians, and finishing carpenters to deliver spa-like bathrooms, chef-grade kitchens, and flawless living areas without the usual remodeling chaos.",
         features: [
           "Full-Gut Home Remodeling",
@@ -122,7 +122,7 @@ export const translations = {
       structural: {
         title: "Estructural y Obra Gris",
         subtitle: "La base inquebrantable de su proyecto.",
-        bgImage: "/structural-bg.png",
+        bgImage: "/structural-bg.webp",
         description: "No solo vaciamos concreto; diseñamos estabilidad. Desde excavaciones profundas y zapatas precisas hasta complejas mallas de refuerzo y encofrados a medida, nuestro equipo estructural asegura que su edificio cumpla con todos los códigos de seguridad canadienses mientras resiste la prueba del tiempo.",
         features: [
           "Excavación Profunda y Prep. del Sitio",
@@ -141,7 +141,7 @@ export const translations = {
       exterior: {
         title: "Exteriores y Adiciones",
         subtitle: "Expandiendo horizontes, elevando el atractivo visual.",
-        bgImage: "/exterior-bg.png",
+        bgImage: "/exterior-bg.webp",
         description: "Transforme el exterior de su propiedad. Ya sea que necesite una ampliación masiva para acomodar a una familia en crecimiento, un lavado de cara completo de la fachada o paisajismo estructural, combinamos la belleza arquitectónica con una durabilidad resistente a la intemperie.",
         features: [
           "Ampliaciones de Viviendas de Varios Pisos",
@@ -161,7 +161,7 @@ export const translations = {
       interior: {
         title: "Renovaciones Interiores",
         subtitle: "Espacios habitables de lujo adaptados a su estilo de vida.",
-        bgImage: "/interior-bg.png",
+        bgImage: "/interior-bg.webp",
         description: "Nuestra división de interiores se especializa en remodelaciones integrales de alta gama. Coordinamos a nuestros maestros plomeros, electricistas y carpinteros de acabados para entregar baños tipo spa, cocinas de chef y áreas de estar impecables sin el caos habitual de una remodelación.",
         features: [
           "Remodelación Integral (Full-Gut)",
@@ -212,7 +212,7 @@ export const translations = {
       structural: {
         title: "Structure et Béton",
         subtitle: "La fondation inébranlable de votre projet.",
-        bgImage: "/structural-bg.png",
+        bgImage: "/structural-bg.webp",
         description: "Nous ne nous contentons pas de couler du béton; nous concevons la stabilité. Des excavations profondes aux semelles précises en passant par les treillis d'armature complexes et les coffrages sur mesure, notre équipe structurelle veille à ce que votre bâtiment réponde à tous les codes de sécurité canadiens tout en résistant à l'épreuve du temps.",
         features: [
           "Excavation Profonde et Préparation du Site",
@@ -231,7 +231,7 @@ export const translations = {
       exterior: {
         title: "Extérieur et Agrandissements",
         subtitle: "Élargir les horizons, rehausser l'attrait extérieur.",
-        bgImage: "/exterior-bg.png",
+        bgImage: "/exterior-bg.webp",
         description: "Transformez l'extérieur de votre propriété. Que vous ayez besoin d'un agrandissement massif pour accueillir une famille grandissante, d'un ravalement complet de façade ou d'un aménagement paysager structurel, nous allions beauté architecturale et durabilité à l'épreuve des intempéries.",
         features: [
           "Agrandissements de Maison à Plusieurs Étages",
@@ -251,7 +251,7 @@ export const translations = {
       interior: {
         title: "Rénovations Intérieures",
         subtitle: "Espaces de vie de luxe adaptés à votre style de vie.",
-        bgImage: "/interior-bg.png",
+        bgImage: "/interior-bg.webp",
         description: "Notre division intérieure se spécialise dans les rénovations complètes haut de gamme. Nous coordonnons nos maîtres plombiers, électriciens et charpentiers de finition pour offrir des salles de bains de style spa, des cuisines de chef et des espaces de vie impeccables sans le chaos habituel d'une rénovation.",
         features: [
           "Rénovation Intégrale de la Maison",

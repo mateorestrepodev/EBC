@@ -16,9 +16,9 @@ export const ServicesGrid = () => {
 
   // Imágenes de fondo para cada tarjeta
   const backgroundImages = [
-    "/structural.png",
-    "/exterior.png",
-    "/interior.png",
+    "/structural.webp",
+    "/exterior.webp",
+    "/interior.webp",
   ];
 
   return (

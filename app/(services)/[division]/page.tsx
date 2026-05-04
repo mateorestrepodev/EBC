@@ -3,6 +3,8 @@
 import { useParams, notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react"; // <-- 1. Importamos useState
 import { useLanguageStore } from "@/store/useLanguageStore";
 import PortfolioCard from "@/components/ui/PortfolioCard";
 
@@ -11,6 +13,9 @@ type ValidDivision = "structural" | "exterior" | "interior";
 export default function DivisionTemplate() {
   const params = useParams();
   const { t, _hasHydrated } = useLanguageStore();
+
+  // 2. Creamos un estado para saber si el fondo ya cargó
+  const [bgLoaded, setBgLoaded] = useState(false);
 
   const divisionKey = params.division as ValidDivision;
   const validDivisions: ValidDivision[] = [
@@ -31,13 +36,30 @@ export default function DivisionTemplate() {
 
   return (
     <main className="bg-ebc-cream min-h-screen">
-      {/* SECCIÓN 1: Hero - AHORA CON h-screen PARA CUBRIR TODA LA PANTALLA */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${data.bgImage})` }}
-        />
-        <div className="absolute inset-0 bg-black/60" />
+      {/* SECCIÓN 1: Hero */}
+      {/* Cambiamos bg-ebc-dark por bg-ebc-wood (o tu color primario) para que el "flash" sea elegante */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-ebc-wood">
+        {/* IMAGEN OPTIMIZADA CON FADE-IN */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={data.bgImage}
+            alt={`${data.title} Background`}
+            fill
+            priority
+            sizes="100vw"
+            // 3. Añadimos la transición de opacidad basada en si ya cargó
+            className={`
+              object-cover 
+              transition-opacity duration-1000 ease-in-out
+              ${bgLoaded ? "opacity-100" : "opacity-0"}
+            `}
+            onLoad={() => setBgLoaded(true)}
+          />
+          {/* Overlay oscuro para que el texto resalte */}
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
+
+        {/* CONTENIDO DEL HERO ANIMADO */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

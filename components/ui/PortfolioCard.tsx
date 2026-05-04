@@ -23,15 +23,20 @@ export default function PortfolioCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-      className="group relative overflow-hidden h-[400px]"
-      style={{ aspectRatio: "8/9" }} // ← más alta que ancha, tipo retrato
+      className="group relative overflow-hidden w-full h-[400px] rounded-sm"
     >
-      {/* Skeleton */}
-      {!loaded && (
-        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
-      )}
+      {/* 
+        Skeleton de Carga:
+        Cambiamos el gris genérico por un color neutro más elegante (ej. ebc-cream o un gris muy suave). 
+        Se desvanece suavemente cuando 'loaded' es true.
+      */}
+      <div
+        className={`absolute inset-0 bg-[#F5F5F0] animate-pulse transition-opacity duration-700 ${
+          loaded ? "opacity-0" : "opacity-100"
+        }`}
+      />
 
-      {/* Imagen — fill ocupa todo el contenedor */}
+      {/* Imagen Optimizada */}
       <Image
         src={img}
         alt={`${title} Project ${index + 1}`}
@@ -39,21 +44,22 @@ export default function PortfolioCard({
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         className={`
           object-cover
-        
+          transition-all duration-1000 ease-in-out
+          group-hover:scale-105
           ${loaded ? "opacity-100" : "opacity-0"}
         `}
         onLoad={() => setLoaded(true)}
       />
 
-      {/* Overlay con gradiente elegante al hover */}
+      {/* Overlay con gradiente oscuro al hacer hover para resaltar contraste */}
       <div
         className="
-        absolute inset-0
-        bg-gradient-to-t from-black/50 via-transparent to-transparent
-        opacity-0 group-hover:opacity-100
-        transition-opacity duration-500
-        pointer-events-none
-      "
+          absolute inset-0
+          bg-gradient-to-t from-black/60 via-black/0 to-transparent
+          opacity-0 group-hover:opacity-100
+          transition-opacity duration-500
+          pointer-events-none
+        "
       />
     </motion.div>
   );
