@@ -41,7 +41,12 @@ export const translations = {
           "Rebar Bending & Installation",
           "High-PSI Concrete Pouring & Finishing"
         ],
-        portfolioImages: ["/structural.png", "/structural.png", "/structural.png", "/structural.png"]
+        portfolioImages: [
+          "/concrete/concrete1.webp", "/concrete/concrete2.webp", "/concrete/concrete3.webp", 
+          "/concrete/concrete4.webp", "/concrete/concrete5.webp", "/concrete/concrete6.webp", 
+          "/concrete/concrete7.webp", "/concrete/concrete8.webp", "/concrete/concrete9.webp", 
+          "/concrete/concrete10.webp"
+        ]
       },
       exterior: {
         title: "Exterior & Additions",
@@ -55,7 +60,13 @@ export const translations = {
           "Architectural Hardscaping",
           "Custom Decks & Patios"
         ],
-        portfolioImages: ["/exterior.png", "/exterior.png", "/exterior.png", "/exterior.png"]
+        portfolioImages: [
+           "/exterior/exterior2.webp", "/exterior/exterior3.webp", 
+          "/exterior/exterior4.webp", "/exterior/exterior5.webp", "/exterior/exterior6.webp", 
+          "/exterior/exterior7.webp", "/exterior/exterior8.webp", "/exterior/exterior9.webp", 
+          "/exterior/exterior10.webp", "/exterior/exterior11.webp", "/exterior/exterior12.webp", 
+          "/exterior/exterior13.webp"
+        ]
       },
       interior: {
         title: "Interior Renovations",
@@ -69,7 +80,12 @@ export const translations = {
           "Custom Millwork & Cabinetry",
           "High-End Flooring & Finishing"
         ],
-        portfolioImages: ["/interior.png", "/interior.png", "/interior.png", "/interior.png"]
+        portfolioImages: [
+          "/interior/interior1.webp", "/interior/interior2.webp", "/interior/interior3.webp", 
+          "/interior/interior4.webp", "/interior/interior5.webp", "/interior/interior6.webp", 
+          "/interior/interior7.webp", "/interior/interior8.webp", "/interior/interior9.webp", 
+          "/interior/interior10.webp", "/interior/interior11.webp", "/interior/interior12.webp"
+        ]
       }
     }
   },
@@ -115,7 +131,12 @@ export const translations = {
           "Doblado e Instalación de Acero de Refuerzo",
           "Vaciado y Acabado de Concreto de Alto PSI"
         ],
-        portfolioImages: ["/structural.png", "/structural.png", "/structural.png", "/structural.png", "/structural.png", "/structural.png"]
+        portfolioImages: [
+          "/concrete/concrete1.webp", "/concrete/concrete2.webp", "/concrete/concrete3.webp", 
+          "/concrete/concrete4.webp", "/concrete/concrete5.webp", "/concrete/concrete6.webp", 
+          "/concrete/concrete7.webp", "/concrete/concrete8.webp", "/concrete/concrete9.webp", 
+          "/concrete/concrete10.webp"
+        ]
       },
       exterior: {
         title: "Exteriores y Adiciones",
@@ -129,7 +150,13 @@ export const translations = {
           "Paisajismo Arquitectónico (Hardscaping)",
           "Terrazas y Patios a Medida"
         ],
-        portfolioImages: ["/exterior.png", "/exterior.png", "/exterior.png", "/exterior.png", "/exterior.png", "/exterior.png"]
+        portfolioImages: [
+           "/exterior/exterior2.webp", "/exterior/exterior3.webp", 
+          "/exterior/exterior4.webp", "/exterior/exterior5.webp", "/exterior/exterior6.webp", 
+          "/exterior/exterior7.webp", "/exterior/exterior8.webp", "/exterior/exterior9.webp", 
+          "/exterior/exterior10.webp", "/exterior/exterior11.webp", "/exterior/exterior12.webp", 
+          "/exterior/exterior13.webp"
+        ]
       },
       interior: {
         title: "Renovaciones Interiores",
@@ -143,7 +170,12 @@ export const translations = {
           "Ebanistería y Gabinetes a Medida",
           "Suelos y Acabados de Alta Gama"
         ],
-        portfolioImages: ["/interior.png", "/interior.png", "/interior.png", "/interior.png", "/interior.png", "/interior.png"]
+        portfolioImages: [
+          "/interior/interior1.webp", "/interior/interior2.webp", "/interior/interior3.webp", 
+          "/interior/interior4.webp", "/interior/interior5.webp", "/interior/interior6.webp", 
+          "/interior/interior7.webp", "/interior/interior8.webp", "/interior/interior9.webp", 
+          "/interior/interior10.webp", "/interior/interior11.webp", "/interior/interior12.webp"
+        ]
       }
     }
   },
@@ -189,7 +221,12 @@ export const translations = {
           "Pliage et Installation d'Armatures",
           "Coulage et Finition de Béton à Haut PSI"
         ],
-        portfolioImages: ["/structural.png", "/structural.png", "/structural.png", "/structural.png"]
+        portfolioImages: [
+          "/concrete/concrete1.webp", "/concrete/concrete2.webp", "/concrete/concrete3.webp", 
+          "/concrete/concrete4.webp", "/concrete/concrete5.webp", "/concrete/concrete6.webp", 
+          "/concrete/concrete7.webp", "/concrete/concrete8.webp", "/concrete/concrete9.webp", 
+          "/concrete/concrete10.webp"
+        ]
       },
       exterior: {
         title: "Extérieur et Agrandissements",
@@ -203,7 +240,13 @@ export const translations = {
           "Aménagement Paysager Architectural",
           "Terrasses et Patios sur Mesure"
         ],
-        portfolioImages: ["/exterior.png", "/exterior.png", "/exterior.png", "/exterior.png"]
+        portfolioImages: [
+           "/exterior/exterior2.webp", "/exterior/exterior3.webp", 
+          "/exterior/exterior4.webp", "/exterior/exterior5.webp", "/exterior/exterior6.webp", 
+          "/exterior/exterior7.webp", "/exterior/exterior8.webp", "/exterior/exterior9.webp", 
+          "/exterior/exterior10.webp", "/exterior/exterior11.webp", "/exterior/exterior12.webp", 
+          "/exterior/exterior13.webp"
+        ]
       },
       interior: {
         title: "Rénovations Intérieures",
@@ -217,7 +260,12 @@ export const translations = {
           "Menuiserie et Armoires sur Mesure",
           "Revêtements de Sol et Finitions Haut de Gamme"
         ],
-        portfolioImages: ["/interior.png", "/interior.png", "/interior.png", "/interior.png"]
+        portfolioImages: [
+          "/interior/interior1.webp", "/interior/interior2.webp", "/interior/interior3.webp", 
+          "/interior/interior4.webp", "/interior/interior5.webp", "/interior/interior6.webp", 
+          "/interior/interior7.webp", "/interior/interior8.webp", "/interior/interior9.webp", 
+          "/interior/interior10.webp", "/interior/interior11.webp", "/interior/interior12.webp"
+        ]
       }
     }
   }
