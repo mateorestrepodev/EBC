@@ -1,16 +1,13 @@
 @import "tailwindcss";
 
-/* Aquí definimos nuestros colores personalizados para que Tailwind 
-   cree las clases automáticamente (ej: bg-ebc-bronze, text-ebc-wood) */
 @theme inline {
   --color-ebc-bronze: #A88258;
-  --color-ebc-wood: #3D2A1D;
-  --color-ebc-cream: #F4F1ED;
-  --color-ebc-dark: #1A1A1A;
+  --color-ebc-cream: #F5F5F0;
+  --color-ebc-dark: #111111;
+  --color-ebc-white: #FFFFFF;
 }
 
 :root {
-  /* Asignamos nuestros colores base a las variables del sistema */
   --background: var(--color-ebc-cream);
   --foreground: var(--color-ebc-dark);
 }
@@ -18,5 +15,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif; /* Más adelante pondremos una fuente premium */
+  /* El antialiased ya lo pusimos en el layout.tsx para fuentes premium */
 }

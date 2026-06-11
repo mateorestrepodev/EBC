@@ -1,12 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ServiceCardProps {
   title: string;
   route: string;
-  bgImage: string; // Nueva propiedad para la imagen de fondo
+  bgImage: string;
   index: number;
 }
 
@@ -16,31 +18,52 @@ export const ServiceCard = ({
   bgImage,
   index,
 }: ServiceCardProps) => {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
-      className="h-[400px] w-[300px]"
+      transition={{
+        duration: 0.8,
+        delay: index * 0.15,
+        ease: [0.76, 0, 0.24, 1],
+      }}
+      // Redujimos el ancho máximo a 320px y ajustamos la proporción a 4/5 para un look más refinado
+      className="w-full aspect-[4/5] max-w-[320px]"
     >
       <Link
         href={route}
-        className="relative block w-full h-full overflow-hidden group rounded-sm shadow-md"
+        className="relative block w-full h-full overflow-hidden group shadow-xl cursor-pointer"
       >
-        {/* Imagen de fondo con animación de escala en hover */}
+        {/* Skeleton Cream */}
         <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-in-out group-hover:scale-105"
-          style={{ backgroundImage: `url(${bgImage})` }}
+          className={`absolute inset-0 bg-[#F5F5F0] animate-pulse transition-opacity duration-700 z-0 ${
+            loaded ? "opacity-0" : "opacity-100"
+          }`}
         />
 
-        {/* Capa oscura (Overlay) para asegurar que el texto se lea. 
-            Se vuelve un poco más clara al hacer hover */}
-        <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-500" />
+        {/* Imagen Optimizada (SE ELIMINÓ EL group-hover:scale-105) */}
+        <Image
+          src={bgImage}
+          alt={`${title} Division`}
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className={`
+            object-cover z-0
+            transition-all duration-[1.2s] ease-[cubic-bezier(0.76,0,0.24,1)]
+            ${loaded ? "opacity-100" : "opacity-0"}
+          `}
+          onLoad={() => setLoaded(true)}
+        />
 
-        {/* Texto centrado estilo Resgroup */}
-        <div className="absolute inset-0 flex items-center justify-center p-6 text-center">
-          <h3 className="text-2xl font-bold text-white uppercase tracking-widest drop-shadow-lg">
+        {/* Overlay premium: Gradiente oscuro desde abajo que solo aparece en hover */}
+        <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#111111]/90 via-[#111111]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[1s] ease-[cubic-bezier(0.76,0,0.24,1)]" />
+
+        {/* Texto: Empieza invisible y desplazado hacia abajo, aparece al hacer hover */}
+        <div className="absolute inset-0 z-20 flex items-end justify-center p-8 pb-10 text-center pointer-events-none">
+          <h3 className="text-xl md:text-2xl font-bold text-[#FFFFFF] uppercase tracking-[0.2em] opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-[0.8s] ease-[cubic-bezier(0.76,0,0.24,1)] drop-shadow-2xl">
             {title}
           </h3>
         </div>
