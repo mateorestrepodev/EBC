@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, animate } from "framer-motion"; // <-- 1. Importamos animate de framer-motion
 import { useLanguageStore } from "@/store/useLanguageStore";
 
 export const Hero = () => {
@@ -15,7 +15,13 @@ export const Hero = () => {
     const next = document.getElementById("divisions");
     if (next) {
       const topOffset = next.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: topOffset, behavior: "smooth" });
+
+      // 2. Animación de scroll personalizada (mucho más suave que el nativo)
+      animate(window.scrollY, topOffset, {
+        duration: 1.2, // Duración del viaje (1.2 segundos para ser elegante)
+        ease: [0.76, 0, 0.24, 1], // La curva suave que usas en el resto del sitio
+        onUpdate: (latest) => window.scrollTo(0, latest),
+      });
     }
   };
 

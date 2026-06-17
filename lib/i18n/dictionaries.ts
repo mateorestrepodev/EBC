@@ -2,7 +2,7 @@ export const translations = {
   en: {
     hero: {
       title: "Building Excellence from the Ground Up",
-      subtitle: "Your Premier General Contracting Partner in Canada.",
+      subtitle: "Your premier general contracting partner in Canada.",
       cta: "Request a Quote",
     },
     nav: ["Structural", "Exterior", "Interior", "Portfolio"],
@@ -87,12 +87,29 @@ export const translations = {
           "/interior/interior10.webp", "/interior/interior11.webp", "/interior/interior12.webp"
         ]
       }
+    },
+    footer: {
+      slogan: "Refining the art of construction",
+      description: "Creating refined residential and commercial spaces through exceptional craftsmanship, thoughtful design, and uncompromising attention to detail.",
+      cta: "Start a Project",
+      navTitle: "Navigation",
+      navLinks: ["Home", "Services", "About"],
+      inquiriesTitle: "Inquiries",
+      inquiries: {
+        sms: "Direct Text / SMS",
+        email: "Email",
+        location: "Location"
+      },
+      legal: {
+        privacy: "Privacy Policy",
+        terms: "Terms of Service"
+      }
     }
   },
   es: {
     hero: {
       title: "Construyendo Excelencia desde los Cimientos",
-      subtitle: "Su Socio Principal en Contratación General en Canadá.",
+      subtitle: "Su socio principal en contratación general en Canadá.",
       cta: "Pedir Cotización",
     },
     nav: ["Estructural", "Exterior", "Interior", "Portafolio"],
@@ -177,12 +194,29 @@ export const translations = {
           "/interior/interior10.webp", "/interior/interior11.webp", "/interior/interior12.webp"
         ]
       }
+    },
+    footer: {
+      slogan: "Refinando el arte de la construcción",
+      description: "Creando espacios residenciales y comerciales refinados a través de una artesanía excepcional, un diseño cuidadoso y una atención inflexible a los detalles.",
+      cta: "Iniciar un Proyecto",
+      navTitle: "Navegación",
+      navLinks: ["Inicio", "Servicios", "Nosotros"],
+      inquiriesTitle: "Consultas",
+      inquiries: {
+        sms: "Texto Directo / SMS",
+        email: "Correo Electrónico",
+        location: "Ubicación"
+      },
+      legal: {
+        privacy: "Política de Privacidad",
+        terms: "Términos de Servicio"
+      }
     }
   },
   fr: {
     hero: {
       title: "Bâtir l'Excellence à partir de la Base",
-      subtitle: "Votre Partenaire de Premier Plan en Entreprise Générale au Canada.",
+      subtitle: "Votre partenaire de premier plan en entreprise générale au Canada.",
       cta: "Demander un Devis",
     },
     nav: ["Structurel", "Extérieur", "Intérieur", "Portfolio"],
@@ -266,6 +300,23 @@ export const translations = {
           "/interior/interior7.webp", "/interior/interior8.webp", "/interior/interior9.webp", 
           "/interior/interior10.webp", "/interior/interior11.webp", "/interior/interior12.webp"
         ]
+      }
+    },
+    footer: {
+      slogan: "Raffiner l'art de la construction",
+      description: "Création d'espaces résidentiels et commerciaux raffinés grâce à un savoir-faire exceptionnel, un design réfléchi et une attention intransigeante aux détails.",
+      cta: "Démarrer un Projet",
+      navTitle: "Navigation",
+      navLinks: ["Accueil", "Services", "À Propos"],
+      inquiriesTitle: "Demandes",
+      inquiries: {
+        sms: "Texte Direct / SMS",
+        email: "E-mail",
+        location: "Emplacement"
+      },
+      legal: {
+        privacy: "Politique de Confidentialité",
+        terms: "Conditions d'Utilisation"
       }
     }
   }

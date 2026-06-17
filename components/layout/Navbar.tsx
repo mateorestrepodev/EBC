@@ -106,12 +106,13 @@ export const Navbar = () => {
 
             <div className="h-5 w-px bg-white/20" />
 
-            <Link
-              href="/contact"
+            {/* CORRECCIÓN: Ahora es una etiqueta <a> apuntando al SMS */}
+            <a
+              href="sms:+14167049004"
               className="inline-flex items-center px-6 py-3 bg-[#A88258] text-[#FFFFFF] text-[12px] font-bold uppercase tracking-[0.15em]  hover:bg-[#FFFFFF] hover:text-[#111111] transition-colors duration-500 shadow-md"
             >
               {_hasHydrated ? t.hero.cta : "Request a Quote"}
-            </Link>
+            </a>
           </div>
 
           {/* ── Botón Menú Móvil ── */}
@@ -195,13 +196,14 @@ export const Navbar = () => {
                   {_hasHydrated ? language : "EN"}
                 </button>
 
-                <Link
-                  href="/contact"
+                {/* CORRECCIÓN: Etiqueta <a> para el SMS en móvil */}
+                <a
+                  href="sms:+14167049004"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="inline-flex items-center justify-center w-full px-6 py-4 bg-[#A88258] text-[#FFFFFF] text-[13px] font-bold uppercase tracking-[0.2em] "
                 >
                   {_hasHydrated ? t.hero.cta : "Request a Quote"}
-                </Link>
+                </a>
               </div>
             </div>
           </motion.div>

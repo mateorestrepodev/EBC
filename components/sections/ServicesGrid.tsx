@@ -24,16 +24,16 @@ export const ServicesGrid = () => {
   ];
 
   return (
-    <section id="divisions" className="py-24 md:py-32 bg-[#F5F5F0]">
+    <section id="divisions" className="py-24  bg-[#F5F5F0]">
       <div className="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título de la Sección Editorial */}
-        <div className="text-center mb-20 md:mb-28">
+        <div className="text-center mb-10 ">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
-            className="text-4xl  font-bold text-[#111111] uppercase tracking-[0.15em]"
+            className="text-xl md:text-3xl  font-bold text-[#111111] uppercase tracking-[0.15em]"
           >
             {t.services.title}
           </motion.h2>
