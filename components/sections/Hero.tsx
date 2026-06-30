@@ -47,12 +47,12 @@ export const Hero = () => {
       </motion.div>
 
       {/* 2. Contenido principal (Textos y Botones en cascada) */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl 2xl:max-w-[1400px] mx-auto flex flex-col items-center  gap-10 pt-4 md:pt-20">
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl 2xl:max-w-[1400px] mx-auto flex flex-col items-center  gap-10 pt-4 md:pt-20">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.8, ease: [0.76, 0, 0.24, 1] }}
-          className="text-4xl sm:text-5xl  font-bold text-[#FFFFFF] uppercase tracking-[0.15em] leading-[1.1] "
+          className="text-3xl sm:text-4xl  font-bold text-[#FFFFFF] uppercase tracking-[0.15em] leading-[1.1] "
         >
           {t.hero.title}
         </motion.h1>
@@ -80,14 +80,6 @@ export const Hero = () => {
           >
             Explore Services
           </button>
-
-          {/* Botón Secundario: View Portfolio */}
-          <Link
-            href="/portfolio"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 border border-[#FFFFFF]/40 text-[#FFFFFF] text-[13px] 2xl:text-[15px] font-bold uppercase tracking-[0.2em]  hover:bg-[#FFFFFF] hover:text-[#111111] hover:border-[#FFFFFF] transition-all duration-500 backdrop-blur-sm"
-          >
-            View Portfolio
-          </Link>
         </motion.div>
       </div>
     </section>

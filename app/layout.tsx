@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: "EBC | Premium General Contracting",
   description:
     "Structural, Exterior and Interior Construction Services Across Canada.",
+  icons: {
+    icon: "/ebc3.svg", // Asegúrate de que este archivo exista en /public
+    apple: "/ebc3.svg",
+  },
 };
 
 export default function RootLayout({

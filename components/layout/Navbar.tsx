@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Globe } from "lucide-react";
 import { useLanguageStore } from "@/store/useLanguageStore";
 import { Language } from "@/lib/i18n/dictionaries";
+import { LogoEBC } from "@/components/ui/LogoEBC"; // <-- Importamos tu nuevo componente SVG
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,14 +61,9 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl 2xl:max-w-[1600px] mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* ── Logo ── */}
-          <Link href="/" className="flex-shrink-0 group">
-            <span className="text-2xl font-bold tracking-widest text-[#FFFFFF] leading-none uppercase">
-              EBC
-              <span className="text-[#A88258] transition-colors duration-500">
-                .
-              </span>
-            </span>
+          {/* ── Logo SVG (Componente) ── */}
+          <Link href="/" className="flex-shrink-0 group" aria-label="Inicio">
+            <LogoEBC className="w-12 h-auto text-[#FFFFFF] group-hover:text-[#A88258] transition-colors duration-500" />
           </Link>
 
           {/* ── Nav Desktop ── */}
@@ -106,10 +102,9 @@ export const Navbar = () => {
 
             <div className="h-5 w-px bg-white/20" />
 
-            {/* CORRECCIÓN: Ahora es una etiqueta <a> apuntando al SMS */}
             <a
               href="sms:+14167049004"
-              className="inline-flex items-center px-6 py-3 bg-[#A88258] text-[#FFFFFF] text-[12px] font-bold uppercase tracking-[0.15em]  hover:bg-[#FFFFFF] hover:text-[#111111] transition-colors duration-500 shadow-md"
+              className="inline-flex items-center px-6 py-3 bg-[#A88258] text-[#FFFFFF] text-[12px] font-bold uppercase tracking-[0.15em] hover:bg-[#FFFFFF] hover:text-[#111111] transition-colors duration-500 shadow-md"
             >
               {_hasHydrated ? t.hero.cta : "Request a Quote"}
             </a>
@@ -196,7 +191,6 @@ export const Navbar = () => {
                   {_hasHydrated ? language : "EN"}
                 </button>
 
-                {/* CORRECCIÓN: Etiqueta <a> para el SMS en móvil */}
                 <a
                   href="sms:+14167049004"
                   onClick={() => setIsMobileMenuOpen(false)}
