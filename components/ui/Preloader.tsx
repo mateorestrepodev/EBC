@@ -40,18 +40,6 @@ export default function Preloader() {
                 animated={true}
                 className="w-48 md:w-64 h-auto drop-shadow-[0_0_15px_rgba(168,130,88,0.2)]"
               />
-
-              {/* Haz de luz (Shimmer) que pasa JUSTO cuando el logo termina de rellenarse de oro */}
-              <motion.div
-                className="absolute top-0 left-0 h-full w-[60%] bg-gradient-to-r from-transparent via-[#FFFFFF]/80 to-transparent skew-x-[-35deg] pointer-events-none"
-                initial={{ x: "-200%" }}
-                animate={{ x: "350%" }}
-                transition={{
-                  delay: 1.8, // Espera a que el dibujo termine (1.8s)
-                  duration: 1.2,
-                  ease: "easeInOut",
-                }}
-              />
             </div>
 
             {/* Línea de carga animada */}
