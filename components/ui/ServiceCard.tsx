@@ -31,7 +31,7 @@ export const ServiceCard = ({
         ease: [0.76, 0, 0.24, 1],
       }}
       // Redujimos el ancho máximo a 320px y ajustamos la proporción a 4/5 para un look más refinado
-      className="w-full aspect-[4/5] max-w-[320px]"
+      className="w-full aspect-[3/5] md:aspect-[4/5] max-w-[320px]"
     >
       <Link
         href={route}

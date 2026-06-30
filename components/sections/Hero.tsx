@@ -47,7 +47,7 @@ export const Hero = () => {
       </motion.div>
 
       {/* 2. Contenido principal (Textos y Botones en cascada) */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl 2xl:max-w-[1400px] mx-auto flex flex-col items-center  gap-10 pt-4 md:pt-20">
+      <div className="relative z-10 text-center px-10 sm:px-6 lg:px-8 max-w-4xl 2xl:max-w-[1400px] mx-auto flex flex-col items-center justify-around h-4/6 md:h-auto  gap-10 pt-4 md:pt-20">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
